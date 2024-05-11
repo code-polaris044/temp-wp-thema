@@ -1,0 +1,326 @@
+@use "../components/"as *;
+
+.p-contactWrap {
+    width: $common-contents-width-pc;
+    margin: 100px auto;
+
+    @include tab {
+        width: $common-contents-width-tab;
+        margin: 60px auto;
+    }
+}
+
+.contact_wrap {
+    width: min(100% - 80px, 960px);
+    margin: 0 auto;
+
+    @include tab {
+        width: 100%;
+    }
+}
+
+.contact_mg_rg {
+    margin-left: 40px;
+}
+
+.contact_column_wrap {
+    display: flex;
+    @include noto-sans-jp($fs-normal, 400);
+
+    @include tab {
+        flex-direction: column;
+        gap: initial;
+    }
+
+    .contact_name,
+    .contact_mail,
+    .contact_tel,
+    .contact_adress {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 20px;
+
+        @include tab {
+            width: 100%;
+        }
+    }
+
+    .contact_name,
+    .contact_tel {
+        margin-right: 40px;
+
+        @include tab {
+            margin-right: initial;
+        }
+    }
+}
+
+.contact_other {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    .textarea {
+        border: 1px solid $c-assort;
+        border-radius: 2px;
+        min-height: 280px;
+        resize: none;
+        padding: 12px;
+
+        @include tab {
+            min-height: 180px;
+        }
+
+        &:focus {
+            outline: 1px solid $c-assort;
+        }
+    }
+}
+
+.input {
+    border: 1px solid $c-assort;
+    border-radius: 2px;
+    padding: 8px;
+
+    &:focus {
+        outline: 1px solid $c-assort;
+    }
+}
+
+#message {
+    height: 300px;
+    resize: none;
+
+    @include tab {
+        height: 200px;
+    }
+}
+
+.label_text {
+    display: inline-block;
+    font-size: $fs-normal;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.contact_required {
+    color: hsla(354, 95%, 50%, 1);
+    padding-left: 10px;
+}
+
+
+//プライバシーポリシー 
+.formPrivacy__title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.formPrivacy__title h3 {
+    font-weight: 800;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.formPrivacy__title p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.formPrivacy__text {
+    height: 300px;
+    margin-bottom: 30px;
+    padding: 30px 50px;
+    border: 1px solid #b1b1b1;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 960px) {
+    .formPrivacy__text {
+        padding: 30px 40px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .formPrivacy__text {
+        padding: 40px 20px;
+        height: 200px;
+    }
+}
+
+.formPrivacy__text p {
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 560px) {
+    .formPrivacy__text p {
+        font-size: 1.2rem;
+    }
+}
+
+.formPrivacy__text p span {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 1;
+    border-left: 4px solid rgb(211, 161, 80);
+}
+
+@media screen and (max-width: 560px) {
+    .formPrivacy__text p span {
+        font-size: 14px;
+    }
+}
+
+//チェックボックス
+
+input[type="checkbox"] {
+    accent-color: #b28247;
+}
+
+.check {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.check .formCheck {
+    width: min(100%, 320px);
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: "Noto Sans JP", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+
+    br {
+        display: none;
+    }
+}
+
+.check .formCheck input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+
+.check .formCheck .mwform-checkbox-field label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.check .formCheck .mwform-checkbox-field label input {
+    margin: 0 5px 0 0;
+}
+
+.check .formCheck .mwform-checkbox-field label span {
+    font-size: 16px;
+}
+
+.require {
+    background-color: #cb4830;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: $c-white;
+    font-size: 14px;
+}
+
+.check .formCheck .error {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
+}
+
+//ボタン 
+.topForm__button {
+    text-align: center;
+}
+
+.topForm__buttonText {
+    margin-bottom: 30px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 960px) {
+    .topForm__buttonText {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+.topForm__button button[type="submit"] {
+    width: 200px;
+    padding: 12px 0;
+    margin: 0 auto;
+    background: $c-accent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: $f-sans;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (max-width: 960px) {
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+button[name="submitBack"] {
+    background: rgb(43, 43, 43);
+}
+
+// お問い合わせ完了
+.mw_wp_form_complete {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 16px;
+}

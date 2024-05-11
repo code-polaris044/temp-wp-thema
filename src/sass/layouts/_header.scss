@@ -1,0 +1,420 @@
+@use "../components/"as *;
+
+//ローディング画面
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: $c-assort;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $c-white;
+    @include f-base($fs-c-20, 500);
+
+    .loading__spinner {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    .loading__spinner::after {
+        border-radius: 40%;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom,
+                hsl(340, 75%, 73%),
+                hsla(282, 100%, 97%, 0.3) 90%,
+                hsla(221, 100%, 95%, 0.5));
+
+        animation: color-fade 3s infinite linear;
+    }
+}
+
+
+.loading__circle {
+    opacity: 0.4;
+    position: absolute;
+    background: hsl(200, 100%, 50%);
+    width: 200px;
+    height: 200px;
+    transform-origin: 50% 47%;
+    border-radius: 40%;
+    animation: rotation 3s infinite linear;
+}
+
+.loading__circle2 {
+    opacity: 0.2;
+    background: hsl(60, 100%, 50%);
+    animation: rotation 5s infinite linear;
+}
+
+.loading__circle3 {
+    animation: rotation 2.5s infinite linear;
+}
+
+.loading__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: $z1;
+    text-align: center;
+    animation: text-fade 300ms infinite linear;
+}
+
+// 回転アニメーション
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// ピンク色の背景のアニメーション
+@keyframes color-fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+// 点滅のアニメーション
+@keyframes text-fade {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+}
+
+//ローディング後
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+//ヘッダー
+.l-header {
+    width: min(100% - 80px, 1600px);
+    height: $h-pc-h;
+    margin: 0 auto;
+    color: $c-text;
+
+    @include tab {
+        width: min(100% - 40px, $tab);
+    }
+
+    .l-headerWrap {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include tab {
+        height: $h-tab-h;
+    }
+}
+
+.l-header__leftWrap {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+// ロゴ
+.l-logo {
+    width: min(100%, 164px);
+
+    @include tab {
+        width: min(120px);
+    }
+
+    .l-logo__picture {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5/1;
+        object-fit: cover;
+        transition: all .4s ease-in-out;
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 2px rgba($c-assort-btn, 0.5);
+    }
+}
+
+//githubアイコン
+.l-github__link {
+    font-size: 2.4rem;
+
+    @include tab {
+        font-size: 1.8rem;
+    }
+
+    .fa-github {
+        &:hover {
+            animation: rumble 0.12s linear infinite;
+        }
+    }
+}
+
+@keyframes rumble {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    12.5% {
+        transform: rotate(0.4deg) translate(1px, -1px);
+    }
+
+    25% {
+        transform: rotate(0.8deg) translate(0px, 1px);
+    }
+
+    37.5% {
+        transform: rotate(0.4deg) translate(-1px, 0);
+    }
+
+    50% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    62.5% {
+        transform: rotate(-0.4deg) translate(1px, 0);
+    }
+
+    75% {
+        transform: rotate(-0.8deg) translate(0, 1px);
+    }
+
+    87.5% {
+        transform: rotate(-0.4deg) translate(-1px, -1px);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+//ヘッダーナビ
+
+.l-menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    @include tab {
+        display: none;
+    }
+
+    .l-menu__item {
+        @include f-base($fs-normal, 400);
+
+        a {
+            padding: 20px 10px;
+            position: relative;
+            color: currentColor;
+        }
+
+        a::after {
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: hsla(0, 0%, 0%, 0.8);
+            bottom: -1px;
+            transform: scale(0, 1);
+            transform-origin: center top;
+            transition: transform 0.3s;
+        }
+
+        a:hover::after {
+            transform: scale(1, 1);
+        }
+    }
+
+    .l-menu__item:not(:first-child, :nth-child(2), :nth-child(3), :nth-child(4)) {
+        @include f-base($fs-normal, 300);
+
+        a {
+            @include btn(1em, .4em, $c-white, $c-assort, $c-assort-btn);
+            position: relative;
+            border-radius: 10em;
+            transition: transform 0.3s;
+        }
+
+        a::after {
+            position: static;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: initial;
+            bottom: -1px;
+            transform: scale(0, 1);
+            transform-origin: center top;
+            transition: transform 0.3s;
+        }
+
+        a:hover::after {
+            transform: initial;
+        }
+    }
+}
+
+//ハンバーガーメニュー
+.l-hamburger {
+    display: none;
+
+    @include tab {
+        display: block;
+        width: 40px;
+        height: 28px;
+        position: relative;
+        z-index: $z3;
+        cursor: pointer;
+
+        span {
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $c-assort;
+            border-radius: 15px;
+            transition: 0.5s;
+        }
+
+        span:first-of-type {
+            /* ハンバーガーメニューの1番目の線 */
+            top: 0;
+        }
+
+        span:nth-of-type(2) {
+            /* ハンバーガーメニューの2番目の線 */
+            top: 50%;
+        }
+
+        span:last-of-type {
+            /* ハンバーガーメニューの3番目の線 */
+            top: 100%;
+        }
+    }
+}
+
+.hamburger.active span:first-of-type {
+    /* ハンバーガーメニューの1番目の線 */
+    top: 50%;
+    transform: rotate(135deg);
+}
+
+.hamburger.active span:nth-of-type(2) {
+    /* ハンバーガーメニューの2番目の線 */
+    opacity: 0;
+    /* 透明にする */
+}
+
+.hamburger.active span:last-of-type {
+    /* ハンバーガーメニューの3番目の線 */
+    top: 50%;
+    transform: rotate(225deg);
+}
+
+.l-hamburger.active span:first-of-type {
+    /* ハンバーガーメニューの1番目の線 */
+    top: 50%;
+    transform: rotate(405deg);
+}
+
+.l-hamburger.active span:nth-of-type(2) {
+    /* ハンバーガーメニューの2番目の線 */
+    opacity: 0;
+    /* 透明にする */
+}
+
+.l-hamburger.active span:last-of-type {
+    /* ハンバーガーメニューの3番目の線 */
+    top: 50%;
+    transform: rotate(-405deg);
+}
+
+.l-sp__menu {
+    display: none;
+}
+
+.l-sp__menu.active {
+    display: none;
+
+    @include tab {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10;
+        align-items: center;
+        background: $c-base-reverse;
+        position: absolute;
+        top: $h-tab-h;
+        left: 0;
+        transition: 0.5s;
+        z-index: $z2;
+        padding: 60px 0;
+
+        .l-menu__item {
+            @include f-base($fs-normal, 400);
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 3s;
+
+            a {
+                display: block;
+                padding: 10px 0;
+                position: relative;
+                color: currentColor;
+                width: 100%;
+                height: 100%;
+                transition: transform 3s;
+
+                &:hover {
+                    background: $c-assort;
+                    color: $c-white;
+                    letter-spacing: .5em;
+                }
+            }
+        }
+    }
+}
+
+// sp current
+.home .l-sp__menu>.l-menu__item:nth-child(1),
+.category-news .l-sp__menu>.l-menu__item:nth-child(2),
+.page-id-28 .l-sp__menu>.l-menu__item:nth-child(3),
+.post-type-archive-gallery .l-sp__menu>.l-menu__item:nth-child(4),
+.page-id-31 .l-sp__menu>.l-menu__item:nth-child(5) {
+    background: rgba($c-accent, .8);
+    color: $c-white;
+}

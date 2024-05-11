@@ -1,0 +1,674 @@
+@use "../components/"as *;
+
+// mv
+.p-mvWrap {
+    width: 100%;
+    height: auto;
+}
+
+.p-slide {
+    width: 100vw;
+    height: calc(100vh - $h-pc-h);
+    position: relative;
+    overflow: hidden;
+}
+
+.p-slide__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - $h-pc-h);
+    opacity: 0;
+    animation: slider-1 24s linear infinite;
+    z-index: 0;
+}
+
+.p-slide__image:nth-child(1) {
+    background-image: image-set(url("#{$only-path}mv1.avif") type("image/avif"),
+        url("#{$only-path}mv1.webp") type("image/webp"),
+        url("#{$only-path}mv1.png") type("image/png"));
+    animation-delay: -2s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.p-slide__image:nth-child(2) {
+    background-image: image-set(url("#{$only-path}mv2.avif") type("image/avif"),
+        url("#{$only-path}mv2.webp") type("image/webp"),
+        url("#{$only-path}mv2.png") type("image/png"));
+    animation-delay: 6s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.p-slide__image:nth-child(3) {
+    background-image: image-set(url("#{$only-path}mv3.avif") type("image/avif"),
+        url("#{$only-path}mv3.webp") type("image/webp"),
+        url("#{$only-path}mv3.png") type("image/png"));
+    animation-delay: 14s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@keyframes slider-1 {
+    0% {
+        opacity: 0;
+    }
+
+    4.16% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    41.66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.p-mv__title {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    color: $c-white;
+    @include f-base($fs-c-64, 400);
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+    span {
+        color: transparent;
+        animation: blur 10s ease-out infinite;
+    }
+
+    span:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    span:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    span:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    span:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+}
+
+
+
+@keyframes blur {
+    0% {
+        text-shadow: 0 0 100px #fff;
+        opacity: 0;
+    }
+
+    5% {
+        text-shadow: 0 0 90px #fff;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    20% {
+        text-shadow: 0 0 0px #fff;
+    }
+
+    80% {
+        text-shadow: 0 0 0px #fff;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    95% {
+        text-shadow: 0 0 90px #fff;
+    }
+
+    100% {
+        text-shadow: 0 0 100px #fff;
+        opacity: 0;
+    }
+}
+
+/*スクロールダウン全体の場所*/
+.p-front__scrollDown {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    height: 50px;
+
+    @include tab {
+        bottom: 40px;
+    }
+
+    /*Scrollテキストの描写*/
+    span {
+        position: absolute;
+        left: -15px;
+        top: -15px;
+        color: $c-white;
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+    }
+
+    /* 線の描写 */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 30px;
+        background: $c-white;
+        animation: pathmove 1.4s ease-in-out infinite;
+        opacity: 0;
+    }
+}
+
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    30% {
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+// ニュース
+.p-front__newsWrap {
+    width: $common-contents-width-pc;
+    margin: 0 auto;
+
+    @include tab {
+        width: $common-contents-width-tab;
+    }
+}
+
+.p-front__news__picker {
+    position: relative;
+    height: 66px;
+    background-color: $c-white;
+    border-radius: 3em;
+    width: min(100% - 40px, 1080px);
+    margin: 0 auto;
+    border: 1px $c-assort solid;
+
+    @include sp {
+        width: min(100% - 0px, 1080px);
+        font-size: 16px;
+    }
+
+    .sliderbox {
+        overflow: hidden;
+        width: 100%;
+        height: 66px;
+    }
+
+    /* 矢印 */
+    .prev {
+        position: absolute;
+        top: 60%;
+        right: 40px;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid $c-text;
+        border-left: 2px solid $c-text;
+        cursor: pointer;
+        transform: translateY(-50%) rotate(-45deg);
+
+        &:hover {
+            scale: (1.1);
+        }
+    }
+
+    .next {
+        position: absolute;
+        top: 40%;
+        right: 40px;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid $c-text;
+        border-right: 2px solid $c-text;
+        cursor: pointer;
+        transform: translateY(-50%) rotate(-135deg);
+
+        &:hover {
+            scale: (1.1);
+        }
+    }
+
+}
+
+
+.sliderlist__item {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+
+    @include tab {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .slider__date {
+        padding: 0 40px;
+
+        .slider__date__link {
+            color: $c-text;
+            @include noto-sans-jp($fs-normal, 400);
+
+            &:hover {
+                color: $c-accent;
+            }
+
+        }
+
+        @include tab {
+            padding: 0 20px;
+        }
+    }
+
+    .slider__text {
+        padding: 0 40px;
+
+        .slider__text__link {
+            color: $c-text;
+            @include noto-sans-jp($fs-normal, 400);
+
+            &:hover {
+                color: $c-accent;
+            }
+        }
+
+        @include sp {
+            padding: 0 20px;
+        }
+    }
+}
+
+.p-front__selfIntroduction,
+.p-front__pastProjects {
+    background: linear-gradient($c-accent, $c-assort);
+    padding: 80px 0;
+
+    @include tab {
+        padding: 50px 0;
+    }
+}
+
+.p-front__selfIntroductionWrap {
+    width: $common-contents-width-pc;
+    margin: 0 auto;
+
+    @include tab {
+        width: $common-contents-width-tab;
+    }
+
+    .p-front__selfIntroduction__title {
+        text-align: center;
+        @include f-base($fs-c-48, 500);
+        color: $c-base;
+    }
+
+    .p-front__selfIntroduction__inner {
+        display: flex;
+        color: $c-base;
+
+        @include tab {
+            flex-direction: column;
+        }
+
+        .selfIntroduction__picWrap {
+            display: block;
+            width: min(100%, 600px);
+
+            @include tab {
+                margin: 0 auto;
+            }
+
+            .selfIntroduction__pic {
+                display: block;
+                width: 100%;
+                aspect-ratio: 4/3;
+                object-fit: cover;
+            }
+        }
+
+        .glass__text__box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            width: min(400px);
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-left: -50px;
+            margin-top: 50px;
+
+            @include tab {
+                margin-left: initial;
+                margin: -100px auto 0;
+                padding: 30px;
+                width: min(100% - 20px, 500px);
+            }
+
+            .glass__title {
+                @include noto-sans-jp($fs-c-20, 400);
+            }
+
+            .glass__text {
+                @include noto-sans-jp($fs-normal, 400);
+            }
+        }
+    }
+}
+
+.p-front__jobCareer {
+    background: linear-gradient($c-assort, $c-accent);
+    padding: 80px 0;
+
+    @include tab {
+        padding: 50px 0;
+    }
+}
+
+.p-front__jobCareerWrap {
+    width: $common-contents-width-pc;
+    margin: 0 auto;
+
+    @include tab {
+        width: $common-contents-width-tab;
+    }
+
+    .p-front__jobCareer__title {
+        text-align: center;
+        @include f-base($fs-c-48, 500);
+        color: $c-base;
+    }
+
+    .p-front__jobCareer__inner {
+        display: flex;
+        color: $c-base;
+
+        @include tab {
+            flex-direction: column-reverse;
+        }
+
+        .jobCareer__picWrap {
+            display: block;
+            width: min(100%, 600px);
+
+            @include tab {
+                margin: 0 auto;
+            }
+
+            .jobCareer__pic {
+                display: block;
+                width: 100%;
+                aspect-ratio: 4/3;
+                object-fit: cover;
+            }
+        }
+
+        .glass__text__box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px 40px 30px;
+            width: min(540px);
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-right: -60px;
+            margin-top: 50px;
+
+            @include tab {
+                margin-right: initial;
+                margin: -100px auto 0;
+                padding: 30px 30px 20px;
+                width: min(100% - 20px, 500px);
+                height: 100%;
+            }
+
+            .glass__text {
+                @include noto-sans-jp($fs-normal, 400);
+                margin-bottom: 10px;
+            }
+        }
+
+        .p-jobCareer__glass {
+            z-index: $z1;
+        }
+    }
+}
+
+.p-front__pastProjectsWrap {
+    width: $common-contents-width-pc;
+    margin: 0 auto;
+
+    @include tab {
+        width: $common-contents-width-tab;
+    }
+
+    .p-front__pastProjects__title {
+        text-align: center;
+        @include f-base($fs-c-48, 500);
+        color: $c-base;
+    }
+
+    .p-front__pastProjects__inner {
+        display: flex;
+        color: $c-base;
+
+        @include tab {
+            flex-direction: column;
+        }
+
+        .pastProjects__picWrap {
+            display: block;
+            width: min(100%, 600px);
+
+            @include tab {
+                margin: 0 auto;
+            }
+
+            .jobCareer__pic {
+                display: block;
+                width: 100%;
+                aspect-ratio: 4/3;
+                object-fit: cover;
+            }
+        }
+
+        .glass__text__box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            width: min(500px);
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-left: -50px;
+            margin-top: 50px;
+
+            @include tab {
+                margin-left: initial;
+                margin: -120px auto 0;
+                padding: 30px;
+                width: min(100% - 20px, 500px);
+                height: 100%;
+            }
+
+            .glass__title {
+                @include noto-sans-jp($fs-c-20, 400);
+            }
+
+
+            .glass__text {
+                @include noto-sans-jp($fs-normal, 400);
+            }
+
+            .p-front__btn {
+                display: block;
+                margin: 0 auto;
+                @include f-base($fs-normal, 400);
+
+                .p-front__btn__link {
+                    @include btn(1.4em, .4em, $c-white, $c-assort, $c-assort-btn);
+                    border-radius: 10em;
+                    transition: transform 0.3s;
+                }
+            }
+        }
+    }
+}
+
+
+
+// instagram
+.p-front__instagram {
+    padding: 100px 0;
+    background: linear-gradient($c-assort, $c-base-reverse);
+
+    @include tab {
+        padding: 50px 0;
+    }
+}
+
+.p-front__instagramWrap {
+    width: min(100%, $pc-s);
+    margin: 0 auto;
+
+
+    .p-front__section__title {
+        text-align: center;
+        @include f-base($fs-c-48, 500);
+        color: $c-base;
+    }
+}
+
+
+
+//contact
+.p-front__contact {
+    background: $c-base-reverse;
+}
+
+.p-front__contactWrap {
+    width: $common-contents-width-pc;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    gap: 40px;
+
+    @include tab {
+        padding: 50px;
+        flex-direction: column-reverse;
+        width: $common-contents-width-tab;
+        gap: 60px;
+    }
+}
+
+.p-front__map {
+    flex: 1;
+    margin-left: calc(50% - 50vw);
+    width: 50%;
+
+    @include tab {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+        border: 2px solid black;
+        border-radius: 0 25px 25px 0;
+
+        @include tab {
+            border-radius: 0;
+            border: 2px solid black;
+            aspect-ratio: 2/1;
+        }
+    }
+}
+
+.p-front__contact__textarea {
+    width: 50%;
+
+    @include tab {
+        width: 100%;
+    }
+
+    .p-front__section__title {
+        @include noto-sans-jp($fs-c-48, 500);
+        color: $c-assort;
+        text-align: center;
+    }
+
+    .p-front__section__lead {
+        @include noto-sans-jp($fs-c-20, 400);
+        text-align: center;
+    }
+
+    .p-front__address {
+        width: min(100%, 300px);
+        margin: 0 auto;
+        line-height: 1.2;
+
+        .p-front__section__subtitle {
+            @include noto-sans-jp($fs-c-18, 400);
+            border-left: 3px $c-assort solid;
+            padding-left: 20px;
+        }
+
+        .p-front__section__text {
+            @include noto-sans-jp($fs-normal, 300);
+            padding-left: 20px;
+        }
+    }
+
+    .p-front__btn {
+        display: block;
+        margin: 0 auto;
+        @include f-base($fs-normal, 400);
+
+        .p-front__btn__link {
+            @include btn(1.4em, .4em, $c-white, $c-assort, $c-assort-btn);
+            border-radius: 10em;
+            transition: transform 0.3s;
+        }
+    }
+}

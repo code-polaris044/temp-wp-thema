@@ -1,0 +1,49 @@
+{
+  "name": "temp-wp-thema",
+  "version": "0.0.0",
+  "description": "template wordpress thema",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Shunya Sugawara",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.5.1",
+    "autoprefixer": "^10.4.19",
+    "css-declaration-sorter": "^7.2.0",
+    "eslint": "^9.2.0",
+    "fast-glob": "^3.3.2",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.38",
+    "postcss-normalize-charset": "^7.0.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.1",
+    "sharp": "^0.33.3",
+    "stylelint": "^16.5.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "three": "^0.164.1",
+    "vue": "^3.4.27"
+  }
+}

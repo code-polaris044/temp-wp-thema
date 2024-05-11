@@ -1,0 +1,729 @@
+// ------------------------------
+// font
+// ------------------------------
+
+// Noto Sans
+/* noto-sans-jp-100 - latin_japanese */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 100;
+    src: local(""),
+        url("../fonts/noto-sans-jp-v42-latin_japanese-100.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-sans-jp-v42-latin_japanese-100.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-sans-jp-300 - latin_japanese */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""),
+        url("../fonts/noto-sans-jp-v42-latin_japanese-300.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-sans-jp-v42-latin_japanese-300.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-sans-jp-regular - latin_japanese */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/noto-sans-jp-v42-latin_japanese-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-sans-jp-v42-latin_japanese-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-sans-jp-500 - latin_japanese */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+        url("../fonts/noto-sans-jp-v42-latin_japanese-500.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-sans-jp-v42-latin_japanese-500.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-sans-jp-700 - latin_japanese */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url("../fonts/noto-sans-jp-v42-latin_japanese-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-sans-jp-v42-latin_japanese-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-sans-jp-900 - latin_japanese */
+@font-face {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 900;
+    src: local(""),
+        url("../fonts/noto-sans-jp-v42-latin_japanese-900.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-sans-jp-v42-latin_japanese-900.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-200 - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 200;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-200.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-200.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-300 - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-300.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-300.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-regular - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-500 - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-500.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-500.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-600 - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 600;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-600.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-600.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-700 - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* noto-serif-jp-900 - latin_japanese */
+@font-face {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 900;
+    src: local(""),
+        url("../fonts/noto-serif-jp-v21-latin_japanese-900.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/noto-serif-jp-v21-latin_japanese-900.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-100 - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-100.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-100.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-100italic - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 100;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-100italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-100italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-300 - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-300.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-300.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-300italic - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-300italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-300italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-regular - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-italic - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-500 - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-500.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-500.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-500italic - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 500;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-500italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-500italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-700 - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-700italic - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 700;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-700italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-700italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-900 - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-900.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-900.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+/* roboto-900italic - latin-ext_latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 900;
+    src: local(""),
+        url("../fonts/roboto-v30-latin-ext_latin-900italic.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v30-latin-ext_latin-900italic.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+// murecho
+/* murecho-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/murecho-v10-latin-100.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-100.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-100.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-100.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-100.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-100.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/murecho-v10-latin-200.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-200.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-200.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-200.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-200.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-200.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/murecho-v10-latin-300.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-300.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-300.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-300.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-300.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-300.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/murecho-v10-latin-regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-regular.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/murecho-v10-latin-500.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-500.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-500.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-500.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/murecho-v10-latin-600.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-600.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-600.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-600.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-600.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-600.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/murecho-v10-latin-700.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-700.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-700.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-700.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-700.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/murecho-v10-latin-800.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-800.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-800.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-800.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-800.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-800.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* murecho-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/murecho-v10-latin-900.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/murecho-v10-latin-900.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/murecho-v10-latin-900.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/murecho-v10-latin-900.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/murecho-v10-latin-900.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/murecho-v10-latin-900.svg#Murecho") format("svg");
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shippori-mincho-v14-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-v14-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-v14-latin-regular.svg#ShipporiMincho') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/shippori-mincho-v14-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-v14-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-v14-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-v14-latin-500.svg#ShipporiMincho') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/shippori-mincho-v14-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-v14-latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-v14-latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-v14-latin-600.svg#ShipporiMincho') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/shippori-mincho-v14-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-v14-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-v14-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-v14-latin-700.svg#ShipporiMincho') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/shippori-mincho-v14-latin-800.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-v14-latin-800.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-v14-latin-800.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-800.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-v14-latin-800.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-v14-latin-800.svg#ShipporiMincho') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-b1-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho B1';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shippori-mincho-b1-v19-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-b1-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-b1-v19-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-b1-v19-latin-regular.svg#ShipporiMinchoB1') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-b1-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho B1';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/shippori-mincho-b1-v19-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-b1-v19-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-b1-v19-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-b1-v19-latin-500.svg#ShipporiMinchoB1') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-b1-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho B1';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/shippori-mincho-b1-v19-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-b1-v19-latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-b1-v19-latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-b1-v19-latin-600.svg#ShipporiMinchoB1') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-b1-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho B1';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/shippori-mincho-b1-v19-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-b1-v19-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-b1-v19-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-b1-v19-latin-700.svg#ShipporiMinchoB1') format('svg');
+    /* Legacy iOS */
+}
+
+/* shippori-mincho-b1-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shippori Mincho B1';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/shippori-mincho-b1-v19-latin-800.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/shippori-mincho-b1-v19-latin-800.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/shippori-mincho-b1-v19-latin-800.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-800.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shippori-mincho-b1-v19-latin-800.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shippori-mincho-b1-v19-latin-800.svg#ShipporiMinchoB1') format('svg');
+    /* Legacy iOS */
+}

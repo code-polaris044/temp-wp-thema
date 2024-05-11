@@ -1,0 +1,83 @@
+@use "../components/"as *;
+
+
+.u-mb__20 {
+    margin-bottom: $mb-20;
+
+    @include tab {
+        margin-bottom: calc($mb-20/2);
+    }
+}
+
+.u-mb__30 {
+    margin-bottom: $mb-30;
+
+    @include tab {
+        margin-bottom: calc($mb-30/2);
+    }
+}
+
+.u-mb__100 {
+    margin-bottom: $mb-100;
+
+    @include tab {
+        margin-bottom: calc($mb-100/2);
+    }
+}
+
+.u-mb__50 {
+    margin-bottom: $mb-50;
+
+    @include tab {
+        margin-bottom: calc($mb-50/2);
+    }
+}
+
+.u-mb__150 {
+    margin-bottom: $mb-150;
+
+    @include tab {
+        margin-bottom: calc($mb-150/2);
+    }
+}
+
+
+.u-mb__200 {
+    margin-bottom: $mb-200;
+
+    @include tab {
+        margin-bottom: calc($mb-200/2);
+    }
+}
+
+.u-pd-50 {
+    padding-bottom: $pd-50;
+
+    @include tab {
+        padding-bottom: calc($pd-50/2);
+    }
+}
+
+.u-pt-100 {
+    padding-top: $pt-100;
+
+    @include tab {
+        padding-bottom: calc($pt-100/2);
+    }
+}
+
+.u-pd-100 {
+    padding-bottom: $pd-100;
+
+    @include tab {
+        padding-bottom: calc($pd-100/2);
+    }
+}
+
+.u-pd-200 {
+    padding-bottom: $pd-200;
+
+    @include tab {
+        padding-bottom: calc($pd-200/2);
+    }
+}

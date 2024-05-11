@@ -1,0 +1,308 @@
+// mixin
+@use "variable"as *;
+
+// ------------------------------
+// mixin
+// ------------------------------
+
+@mixin pc-m {
+    @media screen and (max-width: ($pc-m)) {
+        @content;
+    }
+}
+
+@mixin pc-s {
+    @media screen and (max-width: ($pc-s)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin tab-min {
+    @media screen and (min-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin contents-width {
+    width: $common-contents-width-pc;
+    margin: 0 auto;
+
+    @media screen and (max-width: ($tab)) {
+        width: $common-contents-width-tab;
+    }
+}
+
+// font
+@mixin f-base($f, $w) {
+    font: {
+        weight: $w;
+        size: $f;
+    }
+
+    letter-spacing: .15em;
+    line-height: 1.6;
+}
+
+@mixin noto-serif-jp($f, $w) {
+    font: {
+        family: $f-serif;
+        weight: $w;
+        size: $f;
+    }
+
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+}
+
+@mixin noto-sans-jp($f, $w) {
+    font: {
+        family: $f-sans;
+        weight: $w;
+        size: $f;
+    }
+
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+}
+
+//contents title
+@mixin contents-title($t-f, $t-w, $l-f, $l-w) {
+
+    .c-contents__title {
+
+        font: {
+            family: $f-serif;
+            weight: $t-w;
+            size: $t-f;
+        }
+
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+    }
+
+    .c-contents__lead {
+        font: {
+            family: $f-serif;
+            weight: $l-w;
+            size: $l-f;
+        }
+
+        color: $c-accent;
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+    }
+}
+
+@mixin c-contact__design {
+    display: flex;
+    justify-content: space-between;
+
+    @include tab {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: initial;
+        align-items: center;
+    }
+
+    .c-contact__tel {
+        display: flex;
+        gap: 20px;
+
+        .c-contact__tel__icon {
+            color: $c-accent;
+            font-size: 4.8rem;
+        }
+
+        .c-contact__tel__text {
+            .c-contact__text-green {
+                color: $c-accent;
+                font-weight: 600;
+                font-size: $fs-c-24;
+                line-height: 1.2;
+                letter-spacing: .1em;
+            }
+
+            .c-contact__text {
+                font-size: $fs-normal;
+                line-height: 1.2;
+                letter-spacing: .1em;
+            }
+        }
+    }
+
+    .c-contact__mail {
+        display: flex;
+        gap: 20px;
+
+        .c-contact__mail__icon {
+            color: $c-accent;
+            font-size: 4.8rem;
+
+            .c-contact__mail__link {
+                color: $c-accent;
+            }
+        }
+
+        .c-contact__mail__text {
+            .c-contact__text-green {
+                color: $c-accent;
+                font-weight: 600;
+                font-size: $fs-c-24;
+                line-height: 1.2;
+                letter-spacing: .1em;
+            }
+
+            .c-contact__text {
+                font-size: $fs-normal;
+                line-height: 1.2;
+                letter-spacing: .1em;
+            }
+        }
+    }
+}
+
+
+//ボタン
+
+@mixin btn($y, $x, $color, $bg, $c-hover) {
+    transition: all .3s;
+    display: inline-block;
+    line-height: 1.6;
+    letter-spacing: .1em;
+
+    font: {
+        family: $f-roboto;
+        weight: 300;
+    }
+
+    padding: $x $y;
+    color: $color;
+    background: $bg;
+
+    &:hover {
+        background: $c-hover;
+    }
+
+    @include tab {
+        padding: calc($x/1.6) calc($y/1.6);
+    }
+}
+
+@mixin label__wrap($y, $x) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(($y) * 1px) calc(($x) * 1px);
+}
+
+@mixin form__border {
+    width: 100%;
+    padding: 10px;
+    border: 1px $c-teaxt solid;
+    border-radius: 5px;
+}
+
+// input-layout
+@mixin input-layout {
+    height: 40px;
+    border: 1px solid #B7B7B7;
+    padding-left: 2px
+}
+
+// input-parts
+@mixin input-parts {
+    display: flex;
+    width: min(100% - 0px, 800px);
+    height: 50px;
+    margin: 0 auto;
+
+    .contact-wd-first {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 18%;
+        font-size: 16px;
+    }
+
+    .contact-wd-second {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 14px;
+        width: 10%;
+
+        .required {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 24px;
+            background-color: #CB4830;
+            color: $c-white;
+            border-radius: 4px;
+        }
+    }
+
+    .contact-wd-third {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 16px;
+        width: 72%;
+    }
+
+    // tab
+    @media screen and (max-width: $tab) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: min(100% - 0px, 800px);
+        height: 50px;
+        margin: 20px auto 60px;
+
+        .contact-wd-first {
+            display: flex;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .contact-wd-second {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: auto;
+            font-size: 14px;
+            width: 100%;
+
+            .required {
+                margin: 4px 0;
+            }
+        }
+
+        .contact-wd-third {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            font-size: 16px;
+            width: 100%;
+
+            input {
+                width: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "../components/"as *;
+
+.instagram__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: min(100%, $common-contents-width-pc);
+    gap: 60px 25px;
+    margin: 0 auto;
+
+    @include tab {
+        width: min(100%, $common-contents-width-tab);
+        gap: 40px 20px;
+    }
+
+    .instagram__img__wrap {
+        width: calc((100% - (25px * 4)) / 5);
+
+        @include tab {
+            width: calc((100% - (20px * 2)) / 3);
+        }
+
+        @include sp {
+            width: calc((100% - (20px * 1)) / 2);
+        }
+
+        a {
+            img {
+                border-radius: 30px;
+            }
+
+            &:active,
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

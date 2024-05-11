@@ -1,0 +1,112 @@
+@use '../components/' as *;
+
+.l-lower__bg__about {
+	background-image: image-set(url('#{$only-path}about.avif') type('image/avif'), url('#{$only-path}about.webp') type('image/webp'), url('#{$only-path}about.png') type('image/png'));
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	aspect-ratio: 4/1;
+
+	@include sp {
+		aspect-ratio: 2/1;
+	}
+}
+
+.l-lower__bg__contact {
+	background-image: image-set(url('#{$only-path}contact.avif') type('image/avif'), url('#{$only-path}contact.webp') type('image/webp'), url('#{$only-path}contact.png') type('image/png'));
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	aspect-ratio: 4/1;
+
+	@include sp {
+		aspect-ratio: 2/1;
+	}
+}
+
+.l-lower__bg__404 {
+	background-image: image-set(url('#{$only-path}404.avif') type('image/avif'), url('#{$only-path}404.webp') type('image/webp'), url('#{$only-path}404.png') type('image/png'));
+	position: relative;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	aspect-ratio: 4/1;
+
+	@include tab {
+		aspect-ratio: 3/1;
+	}
+}
+
+.l-lower__bg__archive,
+.l-lower__bg__single {
+	background-image: image-set(url('#{$only-path}news.avif') type('image/avif'), url('#{$only-path}news.webp') type('image/webp'), url('#{$only-path}news.png') type('image/png'));
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	aspect-ratio: 4/1;
+
+	@include sp {
+		aspect-ratio: 2/1;
+	}
+}
+
+.l-lower__bg__gallery {
+	background-image: image-set(url('#{$only-path}gallery.avif') type('image/avif'), url('#{$only-path}gallery.webp') type('image/webp'), url('#{$only-path}gallery.png') type('image/png'));
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	aspect-ratio: 4/1;
+
+	@include sp {
+		aspect-ratio: 2/1;
+	}
+}
+
+.l-lower__mv__title {
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	color: $c-white;
+	@include f-base($fs-c-64, 400);
+	width: fit-content;
+	height: fit-content;
+}
+
+.breadcrumbs {
+	text-align: end;
+	width: min(100% - 80px, $common-contents-width-pc);
+	margin: 20px auto 0;
+
+	@include tab {
+		width: min(100% - 40px, $common-contents-width-tab);
+	}
+}
+
+// ここからcssのテスト
+
+.test_wrap {
+	background: gainsboro;
+	display: block;
+	box-sizing: content-box;
+}
+
+.test_sec {
+	color: red;
+}
+
+// .parent {
+// 	display: none;
+// }
+
+// .parent {
+// 	display: contents;
+// 	background-color: red;
+// }
+
+.span {
+	margin-inline-start: 50%;
+}

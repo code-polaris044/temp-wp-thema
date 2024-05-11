@@ -1,0 +1,107 @@
+@use "../components/"as *;
+
+.l-footer {
+    background: $c-assort;
+}
+
+.l-footerWeap {
+    width: min(100% - 80px, $common-contents-width-pc);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0;
+
+    // ロゴ
+    .l-logo {
+        width: min(100%, 164px);
+
+        @include tab {
+            width: min(120px);
+        }
+
+        .l-logo__picture {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 5/1;
+            object-fit: cover;
+            transition: all .4s ease-in-out;
+        }
+
+        &:hover {
+            box-shadow: 2px 2px 4px rgba($c-assort-btn, 0.5);
+        }
+    }
+
+    .l-footer__nav {
+
+        .sns__container {
+            display: flex;
+            gap: 20px
+        }
+    }
+}
+
+//snsアイコン
+.l-sns__link {
+    font-size: 2.4rem;
+    color: $c-white;
+
+    @include tab {
+        font-size: 1.8rem;
+    }
+
+    .fa-github,
+    .fa-instagram {
+        &:hover {
+            animation: f-rumble 0.12s linear infinite;
+        }
+    }
+}
+
+@keyframes f-rumble {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    12.5% {
+        transform: rotate(0.4deg) translate(1px, -1px);
+    }
+
+    25% {
+        transform: rotate(0.8deg) translate(0px, 1px);
+    }
+
+    37.5% {
+        transform: rotate(0.4deg) translate(-1px, 0);
+    }
+
+    50% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    62.5% {
+        transform: rotate(-0.4deg) translate(1px, 0);
+    }
+
+    75% {
+        transform: rotate(-0.8deg) translate(0, 1px);
+    }
+
+    87.5% {
+        transform: rotate(-0.4deg) translate(-1px, -1px);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+.l-copy {
+    text-align: center;
+    background: $c-accent;
+    padding: 10px 0;
+    color: $c-white;
+    @include f-base(1.4rem, 300);
+}

@@ -1,0 +1,133 @@
+@use "../components/"as *;
+
+.c-mainWrap {
+    background: $c-base-reverse;
+}
+
+.p-about__introductionWrap {
+    width: $about-contents-width-pc;
+    margin: 0 auto;
+    padding: 100px 0;
+
+
+    @include tab {
+        width: $common-contents-width-tab;
+        padding: 50px 0;
+    }
+}
+
+
+.p-about__titleWrap {
+    @include noto-sans-jp($fs-c-32, 600);
+
+    @include tab {
+        text-align: center;
+    }
+}
+
+.p-about__text {
+    @include noto-sans-jp($fs-normal, 400);
+}
+
+.p-about__btnWrap {
+    @include tab {
+        text-align: center;
+    }
+}
+
+.p-about__infoWrap {
+    width: $about-contents-width-pc;
+    margin: 0 auto;
+    padding: 100px 0;
+
+
+    @include tab {
+        width: $common-contents-width-tab;
+        padding: 50px 0;
+    }
+}
+
+.p-about__infoWrap-column {
+    display: flex;
+    justify-content: space-between;
+
+    @include tab {
+        flex-direction: column;
+        justify-content: initial;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .p-about__imgWrap {
+        width: min(100%, 160px);
+        height: auto;
+
+
+        .p-about___img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .p-about__caption {
+            font-size: $fs-normal;
+        }
+    }
+}
+
+.p-about__list__inner {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    font-size: $fs-c-18;
+
+    @include tab {
+        margin-bottom: 50px;
+    }
+
+    .p-about__dt {
+        border-bottom: 1px $c-text dotted;
+        padding: 30px 0 30px 40px;
+        font-weight: 500;
+        line-height: 1.6;
+
+        @include tab {
+            padding: 20px 0 20px 20px;
+        }
+    }
+
+    .p-about__dd {
+        border-bottom: 1px $c-text dotted;
+        padding: 30px 0;
+        line-height: 1.6;
+        font-weight: 500;
+
+        @include tab {
+            padding: 20px 0;
+        }
+    }
+}
+
+.p-about__mapWrap {
+
+    .p-about__map {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/1;
+
+        @include tab {
+            aspect-ratio: 5/2;
+        }
+    }
+}
+
+.p-about__contactWrap {
+    width: $about-contents-width-pc;
+    margin: 0 auto;
+    @include c-contact__design;
+
+    @include tab {
+        width: $common-contents-width-tab;
+    }
+}

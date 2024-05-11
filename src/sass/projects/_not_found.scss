@@ -1,0 +1,21 @@
+@use "../components/"as *;
+
+.p-404 {
+    padding: 100px 0;
+    text-align: center;
+    width: min(100% - 40px, $common-contents-width-tab);
+    margin: 0 auto;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    @include tab {
+        padding: 50px 0;
+    }
+}

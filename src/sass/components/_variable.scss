@@ -1,0 +1,89 @@
+// variable
+@use "font"as *;
+@use "sass:math";
+
+// ------------------------------
+// 変数
+// ------------------------------
+
+// header 
+$h-pc-h: 110px;
+$h-tab-h: 70px;
+
+// content width
+$pc-m: 1400px;
+$pc-s: 1120px;
+$tab: 960px;
+$sp: 560px;
+
+// コンテンツ幅
+$common-contents-width-pc: min(100% - 80px, 1120px);
+$common-contents-width-tab: min(100% - 40px, 960px);
+$common-contents-width-sp: min(100% - 40px, 560px);
+$common-article-width-pc: min(100% - 80px, 640px);
+$common-article-width-sp: min(100% - 40px, 560px);
+$about-contents-width-pc: min(100% - 80px, 720px);
+$contact-contents-width-pc: min(100% - 80px, 720px);
+$front-contents-width-pc: min(100% - 80px, 840px);
+
+
+// color
+$c-text: hsla(213, 6%, 32%);
+$c-assort: hsl(229, 52%, 25%);
+$c-assort-btn:hsl(232, 22%, 87%);
+$c-white: hsl(0, 0%, 100%);
+$c-base:hsla(252, 100%, 99%);
+$c-base-reverse: hsla(184, 100%, 87%);
+$c-accent: hsl(49, 52%, 25%);
+
+// font-family 
+$f-font-awesome: "Font Awesome 5 Free",
+"Font Awesome 5 Brands";
+
+$f-roboto: 'Roboto',
+sans-serif;
+
+$f-sans: 'Noto Sans JP',
+sans-serif;
+
+$f-serif: 'Noto Serif JP',
+serif;
+
+// font-size
+$fs-normal: clamp(1.4rem, 1vw + 1rem, 1.6rem);
+$fs-c-18: clamp(1.6rem, 1vw + 1rem, 1.8rem);
+$fs-c-20: clamp(1.6rem, 1vw + 1rem, 2.0rem);
+$fs-c-24: clamp(1.8rem, 1vw + 1rem, 2.4rem);
+$fs-c-28: clamp(1.8rem, 1vw + 1rem, 2.8rem);
+$fs-c-32:clamp(1.8rem, 2vw + 1rem, 3.2rem);
+$fs-c-36:clamp(2.4rem, 2vw + 1rem, 3.6rem);
+$fs-c-48: clamp(2.4rem, 3vw + 1rem, 4.8rem);
+$fs-c-64: clamp(3.2rem, 3vw + 1rem, 6.4rem);
+
+// url
+$common-path: "../../images/common/";
+$only-path: "../../dist/images/only/";
+
+// ユーティリティ
+
+$mb-200: 200px;
+$mb-150: 150px;
+$mb-100: 100px;
+$mb-80: 80px;
+$mb-30: 30px;
+$mb-50: 50px;
+$mb-30: 30px;
+$mb-20: 20px;
+
+$pt-100: 100px;
+$pt-50: 50px;
+
+$pd-100: 100px;
+$pd-50: 50px;
+$pd-200: 200px;
+
+// z-index
+$z9999: 9999; //#loading 最大値
+$z1: 1; //loading__title , front-pageのカード2枚目
+$z2: 2; //l-sp__menu.active
+$z3: 3; //l-hamburger
