@@ -1,4 +1,12 @@
-node_modules/
-pnpm-lock.yaml
+# Ignore 
+
 dist/
-.DS_Store
+pnpm-lock.yaml
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.DS_Store
+
+
