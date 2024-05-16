@@ -1,5 +1,5 @@
 // mixin
-@use "variable"as *;
+@use 'variable' as *;
 
 // ------------------------------
 // mixin
@@ -51,7 +51,7 @@
         size: $f;
     }
 
-    letter-spacing: .15em;
+    letter-spacing: 0.15em;
     line-height: 1.6;
 }
 
@@ -79,9 +79,7 @@
 
 //contents title
 @mixin contents-title($t-f, $t-w, $l-f, $l-w) {
-
     .c-contents__title {
-
         font: {
             family: $f-serif;
             weight: $t-w;
@@ -131,13 +129,13 @@
                 font-weight: 600;
                 font-size: $fs-c-24;
                 line-height: 1.2;
-                letter-spacing: .1em;
+                letter-spacing: 0.1em;
             }
 
             .c-contact__text {
                 font-size: $fs-normal;
                 line-height: 1.2;
-                letter-spacing: .1em;
+                letter-spacing: 0.1em;
             }
         }
     }
@@ -161,26 +159,25 @@
                 font-weight: 600;
                 font-size: $fs-c-24;
                 line-height: 1.2;
-                letter-spacing: .1em;
+                letter-spacing: 0.1em;
             }
 
             .c-contact__text {
                 font-size: $fs-normal;
                 line-height: 1.2;
-                letter-spacing: .1em;
+                letter-spacing: 0.1em;
             }
         }
     }
 }
 
-
 //ボタン
 
 @mixin btn($y, $x, $color, $bg, $c-hover) {
-    transition: all .3s;
+    transition: all 0.3s;
     display: inline-block;
     line-height: 1.6;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     font: {
         family: $f-roboto;
@@ -216,8 +213,8 @@
 // input-layout
 @mixin input-layout {
     height: 40px;
-    border: 1px solid #B7B7B7;
-    padding-left: 2px
+    border: 1px solid #b7b7b7;
+    padding-left: 2px;
 }
 
 // input-parts
@@ -249,7 +246,7 @@
             justify-content: center;
             width: 46px;
             height: 24px;
-            background-color: #CB4830;
+            background-color: #cb4830;
             color: $c-white;
             border-radius: 4px;
         }

@@ -1,4 +1,4 @@
-@use "../components/"as *;
+@use '../components/' as *;
 
 .p-archive {
     margin: 60px 0 40px;
@@ -78,7 +78,7 @@
             padding: 12px 10px;
 
             &:hover {
-                opacity: .8;
+                opacity: 0.8;
             }
         }
     }
@@ -139,7 +139,7 @@
         display: grid;
         place-content: center;
         border-radius: 50%;
-        font-family: "Roboto";
+        font-family: 'Roboto';
         color: $c-text;
         @include noto-sans-jp($fs-normal, 400);
         font-style: italic;

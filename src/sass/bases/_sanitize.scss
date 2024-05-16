@@ -1,5 +1,5 @@
-@use "../components"as *;
-@use "sass:math";
+@use '../components' as *;
+@use 'sass:math';
 
 *,
 ::before,
@@ -154,16 +154,16 @@ textarea {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
     cursor: pointer;
 }
 
 button:disabled,
-[type="button"]:disabled,
-[type="reset"]:disabled,
-[type="submit"]:disabled {
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled {
     cursor: default;
 }
 
@@ -197,12 +197,12 @@ textarea {
     overflow: auto;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
     height: auto;
 }
 
-[type="search"] {
+[type='search'] {
     outline-offset: -2px;
 }
 
@@ -265,7 +265,7 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-a[href^="tel:"] {
+a[href^='tel:'] {
     pointer-events: none;
     cursor: default;
     text-decoration: none;

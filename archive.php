@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="p-archive__main">
-  <section class="l-underlayer__common">
+    <section class="l-underlayer__common">
     <?php
     include('templates/under-mv.php');
     ?>

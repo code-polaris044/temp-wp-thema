@@ -1,7 +1,7 @@
 # Ignore 
 
 dist/
-pnpm-lock.yaml
+**/pnpm-lock.yaml
 
 **/.git
 **/.svn

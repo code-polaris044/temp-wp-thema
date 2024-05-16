@@ -1,4 +1,4 @@
-@use "../components/"as *;
+@use '../components/' as *;
 
 .c-mainWrap {
     background: $c-base-reverse;
@@ -9,13 +9,11 @@
     margin: 0 auto;
     padding: 100px 0;
 
-
     @include tab {
         width: $common-contents-width-tab;
         padding: 50px 0;
     }
 }
-
 
 .p-about__titleWrap {
     @include noto-sans-jp($fs-c-32, 600);
@@ -40,7 +38,6 @@
     margin: 0 auto;
     padding: 100px 0;
 
-
     @include tab {
         width: $common-contents-width-tab;
         padding: 50px 0;
@@ -61,7 +58,6 @@
     .p-about__imgWrap {
         width: min(100%, 160px);
         height: auto;
-
 
         .p-about___img {
             width: 100%;
@@ -110,7 +106,6 @@
 }
 
 .p-about__mapWrap {
-
     .p-about__map {
         width: 100%;
         height: auto;

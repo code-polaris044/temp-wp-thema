@@ -1,4 +1,4 @@
-@use "../components/"as *;
+@use '../components/' as *;
 
 //ローディング画面
 #loading {
@@ -24,19 +24,20 @@
 
     .loading__spinner::after {
         border-radius: 40%;
-        content: "";
+        content: '';
         display: block;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom,
-                hsl(340, 75%, 73%),
-                hsla(282, 100%, 97%, 0.3) 90%,
-                hsla(221, 100%, 95%, 0.5));
+        background: linear-gradient(
+            to bottom,
+            hsl(340, 75%, 73%),
+            hsla(282, 100%, 97%, 0.3) 90%,
+            hsla(221, 100%, 95%, 0.5)
+        );
 
         animation: color-fade 3s infinite linear;
     }
 }
-
 
 .loading__circle {
     opacity: 0.4;
@@ -143,7 +144,7 @@
 .l-header__leftWrap {
     display: flex;
     align-items: center;
-    gap: 30px
+    gap: 30px;
 }
 
 // ロゴ
@@ -160,7 +161,7 @@
         height: auto;
         aspect-ratio: 5/1;
         object-fit: cover;
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
     &:hover {
@@ -263,7 +264,7 @@
         @include f-base($fs-normal, 300);
 
         a {
-            @include btn(1em, .4em, $c-white, $c-assort, $c-assort-btn);
+            @include btn(1em, 0.4em, $c-white, $c-assort, $c-assort-btn);
             position: relative;
             border-radius: 10em;
             transition: transform 0.3s;
@@ -402,7 +403,7 @@
                 &:hover {
                     background: $c-assort;
                     color: $c-white;
-                    letter-spacing: .5em;
+                    letter-spacing: 0.5em;
                 }
             }
         }
@@ -410,11 +411,11 @@
 }
 
 // sp current
-.home .l-sp__menu>.l-menu__item:nth-child(1),
-.category-news .l-sp__menu>.l-menu__item:nth-child(2),
-.page-id-28 .l-sp__menu>.l-menu__item:nth-child(3),
-.post-type-archive-gallery .l-sp__menu>.l-menu__item:nth-child(4),
-.page-id-31 .l-sp__menu>.l-menu__item:nth-child(5) {
-    background: rgba($c-accent, .8);
+.home .l-sp__menu > .l-menu__item:nth-child(1),
+.category-news .l-sp__menu > .l-menu__item:nth-child(2),
+.page-id-28 .l-sp__menu > .l-menu__item:nth-child(3),
+.post-type-archive-gallery .l-sp__menu > .l-menu__item:nth-child(4),
+.page-id-31 .l-sp__menu > .l-menu__item:nth-child(5) {
+    background: rgba($c-accent, 0.8);
     color: $c-white;
 }

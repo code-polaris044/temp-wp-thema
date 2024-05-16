@@ -1,4 +1,4 @@
-@use "../components/"as *;
+@use '../components/' as *;
 
 .p-contactWrap {
     width: $common-contents-width-pc;
@@ -109,8 +109,7 @@
     padding-left: 10px;
 }
 
-
-//プライバシーポリシー 
+//プライバシーポリシー
 .formPrivacy__title {
     margin-top: 60px;
     margin-bottom: 30px;
@@ -154,7 +153,7 @@
     line-height: 1.6;
     font-size: 14px;
     margin-bottom: 30px;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 @media screen and (max-width: 560px) {
@@ -180,7 +179,7 @@
 
 //チェックボックス
 
-input[type="checkbox"] {
+input[type='checkbox'] {
     accent-color: #b28247;
 }
 
@@ -194,7 +193,7 @@ input[type="checkbox"] {
     width: min(100%, 320px);
     margin: 0 auto;
     padding: 20px 0;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -211,7 +210,7 @@ input[type="checkbox"] {
     }
 }
 
-.check .formCheck input[type="checkbox"] {
+.check .formCheck input[type='checkbox'] {
     width: 24px;
     height: 24px;
 }
@@ -249,19 +248,19 @@ input[type="checkbox"] {
     transform: translate(-50%, 100%);
 }
 
-//ボタン 
+//ボタン
 .topForm__button {
     text-align: center;
 }
 
 .topForm__buttonText {
     margin-bottom: 30px;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 14px;
 }
 
 .fa-angle-right:before {
-    content: "\f105";
+    content: '\f105';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -269,7 +268,7 @@ input[type="checkbox"] {
 }
 
 .fa-angle-left:before {
-    content: "\f104";
+    content: '\f104';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -283,7 +282,7 @@ input[type="checkbox"] {
     }
 }
 
-.topForm__button button[type="submit"] {
+.topForm__button button[type='submit'] {
     width: 200px;
     padding: 12px 0;
     margin: 0 auto;
@@ -304,17 +303,17 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 960px) {
-    button[type="submit"] {
+    button[type='submit'] {
         font-size: 16px;
     }
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
     cursor: pointer;
-    opacity: .8;
+    opacity: 0.8;
 }
 
-button[name="submitBack"] {
+button[name='submitBack'] {
     background: rgb(43, 43, 43);
 }
 

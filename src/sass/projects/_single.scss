@@ -1,4 +1,4 @@
-@use "../components/"as *;
+@use '../components/' as *;
 
 .p-single {
     margin: 60px 0 100px;
@@ -85,7 +85,7 @@
     margin: 0 auto;
 
     .btn__link {
-        @include btn(1.4em, .4em, $c-white, $c-assort, $c-assort-btn);
+        @include btn(1.4em, 0.4em, $c-white, $c-assort, $c-assort-btn);
         border-radius: 10em;
     }
 }

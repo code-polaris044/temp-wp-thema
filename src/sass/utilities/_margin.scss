@@ -1,5 +1,4 @@
-@use "../components/"as *;
-
+@use '../components/' as *;
 
 .u-mb__20 {
     margin-bottom: $mb-20;
@@ -40,7 +39,6 @@
         margin-bottom: calc($mb-150/2);
     }
 }
-
 
 .u-mb__200 {
     margin-bottom: $mb-200;

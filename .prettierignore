@@ -1,0 +1,17 @@
+# Ignore 
+**/dist/
+**/src/fonts
+**/src/images
+
+# Ignore file
+**/pnpm-lock.yaml
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.DS_Store
+**/.prototools
+**/package.json
+**/.prettierignore
+**/.eslintignore
+**/_index.scss

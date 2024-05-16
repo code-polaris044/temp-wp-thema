@@ -1,4 +1,4 @@
-@use "../components/"as *;
+@use '../components/' as *;
 
 .p-single__galleryWrap {
     width: $common-contents-width-pc;
@@ -28,11 +28,9 @@
             @include noto-sans-jp($fs-normal, 400);
 
             &::hover {
-                opacity: .8;
+                opacity: 0.8;
             }
-
         }
-
     }
 }
 
@@ -90,7 +88,6 @@
     }
 }
 
-
 .p-single__gallery__btnWrap {
     display: flex;
     flex-direction: column;
@@ -100,7 +97,7 @@
 
     .p-single__gallery__back__btn {
         .btn__link {
-            @include btn(4.8em, .4em, $c-white, $c-assort, $c-assort-btn);
+            @include btn(4.8em, 0.4em, $c-white, $c-assort, $c-assort-btn);
             border-radius: 25px;
         }
     }

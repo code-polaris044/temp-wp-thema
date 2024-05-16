@@ -1,12 +1,12 @@
 // variable
-@use "font"as *;
-@use "sass:math";
+@use 'font' as *;
+@use 'sass:math';
 
 // ------------------------------
 // 変数
 // ------------------------------
 
-// header 
+// header
 $h-pc-h: 110px;
 $h-tab-h: 70px;
 
@@ -26,43 +26,38 @@ $about-contents-width-pc: min(100% - 80px, 720px);
 $contact-contents-width-pc: min(100% - 80px, 720px);
 $front-contents-width-pc: min(100% - 80px, 840px);
 
-
 // color
 $c-text: hsla(213, 6%, 32%);
 $c-assort: hsl(229, 52%, 25%);
-$c-assort-btn:hsl(232, 22%, 87%);
+$c-assort-btn: hsl(232, 22%, 87%);
 $c-white: hsl(0, 0%, 100%);
-$c-base:hsla(252, 100%, 99%);
+$c-base: hsla(252, 100%, 99%);
 $c-base-reverse: hsla(184, 100%, 87%);
 $c-accent: hsl(49, 52%, 25%);
 
-// font-family 
-$f-font-awesome: "Font Awesome 5 Free",
-"Font Awesome 5 Brands";
+// font-family
+$f-font-awesome: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
 
-$f-roboto: 'Roboto',
-sans-serif;
+$f-roboto: 'Roboto', sans-serif;
 
-$f-sans: 'Noto Sans JP',
-sans-serif;
+$f-sans: 'Noto Sans JP', sans-serif;
 
-$f-serif: 'Noto Serif JP',
-serif;
+$f-serif: 'Noto Serif JP', serif;
 
 // font-size
 $fs-normal: clamp(1.4rem, 1vw + 1rem, 1.6rem);
 $fs-c-18: clamp(1.6rem, 1vw + 1rem, 1.8rem);
-$fs-c-20: clamp(1.6rem, 1vw + 1rem, 2.0rem);
+$fs-c-20: clamp(1.6rem, 1vw + 1rem, 2rem);
 $fs-c-24: clamp(1.8rem, 1vw + 1rem, 2.4rem);
 $fs-c-28: clamp(1.8rem, 1vw + 1rem, 2.8rem);
-$fs-c-32:clamp(1.8rem, 2vw + 1rem, 3.2rem);
-$fs-c-36:clamp(2.4rem, 2vw + 1rem, 3.6rem);
+$fs-c-32: clamp(1.8rem, 2vw + 1rem, 3.2rem);
+$fs-c-36: clamp(2.4rem, 2vw + 1rem, 3.6rem);
 $fs-c-48: clamp(2.4rem, 3vw + 1rem, 4.8rem);
 $fs-c-64: clamp(3.2rem, 3vw + 1rem, 6.4rem);
 
 // url
-$common-path: "../../images/common/";
-$only-path: "../../dist/images/only/";
+$common-path: '../../images/common/';
+$only-path: '../../dist/images/only/';
 
 // ユーティリティ
 
