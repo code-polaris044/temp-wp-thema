@@ -1,3 +1,4 @@
+/** @type {import("prettier").Config} */
 'use strict';
 
 export default {

@@ -1,3 +1,4 @@
+/** @type {import('stylelint').Config} */
 'use strict';
 
 export default {
