@@ -49,5 +49,5 @@ export default [
             'no-unused-vars': 'warn',
         },
     },
-    { ignores: ['./dist', './node_modules', './pnpm-lock.yaml'] },
+    { ignores: ['dist', 'node_modules', 'pnpm-lock.yaml'] },
 ];

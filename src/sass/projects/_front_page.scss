@@ -87,7 +87,9 @@
     inset: 0;
     margin: auto;
     color: $c-white;
+
     @include f-base($fs-c-64, 400);
+
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -129,11 +131,11 @@
     }
 
     20% {
-        text-shadow: 0 0 0px #fff;
+        text-shadow: 0 0 0 #fff;
     }
 
     80% {
-        text-shadow: 0 0 0px #fff;
+        text-shadow: 0 0 0 #fff;
     }
 
     85% {
@@ -150,18 +152,18 @@
     }
 }
 
-/*スクロールダウン全体の場所*/
+/* スクロールダウン全体の場所 */
 .p-front__scrollDown {
     position: absolute;
     left: 50%;
-    bottom: 0px;
+    bottom: 0;
     height: 50px;
 
     @include tab {
         bottom: 40px;
     }
 
-    /*Scrollテキストの描写*/
+    /* Scrollテキストの描写 */
     span {
         position: absolute;
         left: -15px;
@@ -184,7 +186,7 @@
     }
 }
 
-/*高さ・位置・透過が変化して線が上から下に動く*/
+/* 高さ・位置・透過が変化して線が上から下に動く */
 @keyframes pathmove {
     0% {
         height: 0;
@@ -285,6 +287,7 @@
 
         .slider__date__link {
             color: $c-text;
+
             @include noto-sans-jp($fs-normal, 400);
 
             &:hover {
@@ -302,6 +305,7 @@
 
         .slider__text__link {
             color: $c-text;
+
             @include noto-sans-jp($fs-normal, 400);
 
             &:hover {
@@ -335,7 +339,9 @@
 
     .p-front__selfIntroduction__title {
         text-align: center;
+
         @include f-base($fs-c-48, 500);
+
         color: $c-base;
     }
 
@@ -364,12 +370,12 @@
         }
 
         .glass__text__box {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgb(255 255 255 / 10%);
             backdrop-filter: blur(20px);
             padding: 40px;
             width: min(400px);
             height: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgb(255 255 255 / 10%);
             border-radius: 10px;
             margin-left: -50px;
             margin-top: 50px;
@@ -411,7 +417,9 @@
 
     .p-front__jobCareer__title {
         text-align: center;
+
         @include f-base($fs-c-48, 500);
+
         color: $c-base;
     }
 
@@ -440,12 +448,12 @@
         }
 
         .glass__text__box {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgb(255 255 255 / 10%);
             backdrop-filter: blur(20px);
             padding: 40px 40px 30px;
             width: min(540px);
             height: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgb(255 255 255 / 10%);
             border-radius: 10px;
             margin-right: -60px;
             margin-top: 50px;
@@ -460,6 +468,7 @@
 
             .glass__text {
                 @include noto-sans-jp($fs-normal, 400);
+
                 margin-bottom: 10px;
             }
         }
@@ -480,7 +489,9 @@
 
     .p-front__pastProjects__title {
         text-align: center;
+
         @include f-base($fs-c-48, 500);
+
         color: $c-base;
     }
 
@@ -509,12 +520,12 @@
         }
 
         .glass__text__box {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgb(255 255 255 / 10%);
             backdrop-filter: blur(20px);
             padding: 40px;
             width: min(500px);
             height: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgb(255 255 255 / 10%);
             border-radius: 10px;
             margin-left: -50px;
             margin-top: 50px;
@@ -538,10 +549,12 @@
             .p-front__btn {
                 display: block;
                 margin: 0 auto;
+
                 @include f-base($fs-normal, 400);
 
                 .p-front__btn__link {
                     @include btn(1.4em, 0.4em, $c-white, $c-assort, $c-assort-btn);
+
                     border-radius: 10em;
                     transition: transform 0.3s;
                 }
@@ -566,7 +579,9 @@
 
     .p-front__section__title {
         text-align: center;
+
         @include f-base($fs-c-48, 500);
+
         color: $c-base;
     }
 }
@@ -627,12 +642,14 @@
 
     .p-front__section__title {
         @include noto-sans-jp($fs-c-48, 500);
+
         color: $c-assort;
         text-align: center;
     }
 
     .p-front__section__lead {
         @include noto-sans-jp($fs-c-20, 400);
+
         text-align: center;
     }
 
@@ -643,12 +660,14 @@
 
         .p-front__section__subtitle {
             @include noto-sans-jp($fs-c-18, 400);
+
             border-left: 3px $c-assort solid;
             padding-left: 20px;
         }
 
         .p-front__section__text {
             @include noto-sans-jp($fs-normal, 300);
+
             padding-left: 20px;
         }
     }
@@ -656,10 +675,12 @@
     .p-front__btn {
         display: block;
         margin: 0 auto;
+
         @include f-base($fs-normal, 400);
 
         .p-front__btn__link {
             @include btn(1.4em, 0.4em, $c-white, $c-assort, $c-assort-btn);
+
             border-radius: 10em;
             transition: transform 0.3s;
         }

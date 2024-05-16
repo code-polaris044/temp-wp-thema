@@ -25,6 +25,7 @@
 
 .contact_column_wrap {
     display: flex;
+
     @include noto-sans-jp($fs-normal, 400);
 
     @include tab {
@@ -105,7 +106,7 @@
 }
 
 .contact_required {
-    color: hsla(354, 95%, 50%, 1);
+    color: hsl(354deg 95% 50% / 100%);
     padding-left: 10px;
 }
 
@@ -135,14 +136,14 @@
     overflow-y: scroll;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (width <= 960px) {
     .formPrivacy__text {
         padding: 30px 40px;
         height: 300px;
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (width <= 560px) {
     .formPrivacy__text {
         padding: 40px 20px;
         height: 200px;
@@ -156,7 +157,7 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (width <= 560px) {
     .formPrivacy__text p {
         font-size: 1.2rem;
     }
@@ -168,10 +169,10 @@
     font-size: 16px;
     padding-left: 10px;
     line-height: 1;
-    border-left: 4px solid rgb(211, 161, 80);
+    border-left: 4px solid rgb(211 161 80);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (width <= 560px) {
     .formPrivacy__text p span {
         font-size: 14px;
     }
@@ -195,7 +196,7 @@ input[type='checkbox'] {
     padding: 20px 0;
     font-family: 'Noto Sans JP', sans-serif;
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -217,7 +218,7 @@ input[type='checkbox'] {
 
 .check .formCheck .mwform-checkbox-field label {
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -244,7 +245,6 @@ input[type='checkbox'] {
     position: absolute;
     left: 50%;
     bottom: 0;
-    -webkit-transform: translate(-50%, 100%);
     transform: translate(-50%, 100%);
 }
 
@@ -259,7 +259,7 @@ input[type='checkbox'] {
     font-size: 14px;
 }
 
-.fa-angle-right:before {
+.fa-angle-right::before {
     content: '\f105';
     position: absolute;
     top: 50%;
@@ -267,7 +267,7 @@ input[type='checkbox'] {
     transform: translate(-50%, -50%);
 }
 
-.fa-angle-left:before {
+.fa-angle-left::before {
     content: '\f104';
     position: absolute;
     top: 50%;
@@ -275,7 +275,7 @@ input[type='checkbox'] {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (width <= 960px) {
     .topForm__buttonText {
         font-size: 14px;
         margin-bottom: 20px;
@@ -291,7 +291,7 @@ input[type='checkbox'] {
     color: #fff;
     font-size: 20px;
     font-family: $f-sans;
-    display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -302,7 +302,7 @@ input[type='checkbox'] {
     position: relative;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (width <= 960px) {
     button[type='submit'] {
         font-size: 16px;
     }
@@ -314,7 +314,7 @@ button[type='submit']:hover {
 }
 
 button[name='submitBack'] {
-    background: rgb(43, 43, 43);
+    background: rgb(43 43 43);
 }
 
 // お問い合わせ完了

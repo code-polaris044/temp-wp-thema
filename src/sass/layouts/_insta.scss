@@ -2,8 +2,7 @@
 
 .instagram__content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: min(100%, $common-contents-width-pc);
     gap: 60px 25px;
     margin: 0 auto;

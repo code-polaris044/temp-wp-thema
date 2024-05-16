@@ -12,14 +12,14 @@
 html {
     font-size: 62.5%;
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-size: 1.6rem;
     overflow-x: hidden;
     font-family: $f-roboto, $f-font-awesome;
@@ -85,7 +85,7 @@ hr {
 }
 
 pre {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: inherit;
 }
 
@@ -262,7 +262,7 @@ a {
     padding: 0;
     vertical-align: baseline;
     background: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 }
 
 a[href^='tel:'] {

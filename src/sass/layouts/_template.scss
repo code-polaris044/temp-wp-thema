@@ -91,7 +91,9 @@
     inset: 0;
     margin: auto;
     color: $c-white;
+
     @include f-base($fs-c-64, 400);
+
     width: fit-content;
     height: fit-content;
 }

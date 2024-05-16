@@ -120,6 +120,7 @@
 .p-about__contactWrap {
     width: $about-contents-width-pc;
     margin: 0 auto;
+
     @include c-contact__design;
 
     @include tab {
