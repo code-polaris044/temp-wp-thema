@@ -23,7 +23,7 @@ export default defineConfig({
                     return `assets/${extType}/[name][extname]`;
                 },
                 chunkFileNames: 'assets/js/[name].js',
-                entryFileNames: 'assets/js/[name].js',
+                entryFileNames: 'assets/ts/[name].ts',
             },
         },
         css: {
