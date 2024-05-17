@@ -1,8 +1,6 @@
 # Ignore 
-
 dist/
 **/pnpm-lock.yaml
-
 **/.git
 **/.svn
 **/.hg

@@ -9,7 +9,7 @@ export default {
             {
                 except: ['blockless-after-blockless', 'first-nested'],
                 ignore: ['after-comment'],
-                ignoreAtRules: ['else'],
+                ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
             },
         ],
         'import-notation': 'string',

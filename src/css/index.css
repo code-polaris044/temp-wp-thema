@@ -1,0 +1,7 @@
+body {
+    background: #000;
+    column-count: 2;
+    filter: grayscale(50%);
+    display: flex;
+    backdrop-filter: blur(2px);
+}

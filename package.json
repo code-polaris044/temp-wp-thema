@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "fmt": "prettier --write .",
-    "lint": "eslint src --fix && stylelint \"src/sass/**/*.scss\" --fix"
+    "lint": "eslint src --fix && stylelint \"src/sass/**/*.scss\" --fix",
+    "build:css": "postcss src/css/index.css -o dist/css/styles.css"
   },
   "keywords": [],
   "author": "Shunya Sugawara",
@@ -41,9 +42,9 @@
     "globals": "^15.2.0",
     "lodash": "^4.17.21",
     "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "postcss-normalize-charset": "^7.0.0",
-    "postcss-prefix-selector": "^1.16.1",
     "postcss-reporter": "^7.1.0",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.2.5",
