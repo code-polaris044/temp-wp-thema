@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "ts": "tsc --noEmit",
     "preview": "vite preview",
     "fmt": "prettier --write .",
     "lint": "eslint src --fix && stylelint \"src/sass/**/*.scss\" --fix",
